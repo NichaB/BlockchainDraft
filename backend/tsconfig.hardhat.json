@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist-hardhat", // optional: ป้องกันชนกับ NestJS
+    "allowJs": true,
+    "checkJs": false,
+    "noEmit": true, // ✅ ไม่ compile จริง
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  },
+  "include": ["hardhat.config.ts", "scripts", "contracts"]
+}
